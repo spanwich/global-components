@@ -310,6 +310,11 @@ connector seL4SharedDataWithCaps {
         \<rparr> \<rparr>";
 }
 
+connector seL4HWSharedDataWithCaps {
+    from hardware Dataport;
+    to Dataports with 0 threads;
+}
+
 /**
 * seL4VirtQueues
 *

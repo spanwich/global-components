@@ -57,6 +57,12 @@ endforeach()
 
 # Specific connector templates not fitting with the schemes above
 DeclareCAmkESConnector(
+    seL4HWSharedDataWithCaps
+    TO
+    seL4SharedDataWithCaps.template.c
+)
+
+DeclareCAmkESConnector(
     seL4SharedDataWithCaps
     FROM
     seL4SharedDataWithCaps.template.c
